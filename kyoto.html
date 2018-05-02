@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport">
-  <title>Bootstrap Template</title>
+  <title>Kyoto</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,8 +13,8 @@
     var dblclick = 0;
 
     function openNav() {
-      document.getElementById("mySidenav").style.width = "50px";
-      document.getElementById("main").style.marginLeft = "80px";
+      document.getElementById("mySidenav").style.width = "120px";
+      document.getElementById("main").style.marginLeft = "140px";
       dblclick++;
       if (dblclick == 2) {
         document.getElementById("mySidenav").style.width = "0";
@@ -32,18 +32,68 @@
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
-   <div id="main"> <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <div id="main"> <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="index.html" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home home"></span></a>
-    <a href="info.html" data-toggle="tooltip" title="Info"><span class="glyphicon glyphicon-info-sign info"></span></a>
-    <a href="gallery.html" data-toggle="tooltip" title="Gallery"><span class="glyphicon glyphicon-picture pic"></span></a>
-    <a data-toggle="tooltip" title="Contact"><span class="glyphicon glyphicon-user contact"></span></a>
-    <a href="buy.html" data-toggle="tooltip" title="Store"><span class="glyphicon glyphicon-tags buy"></span></a>
-    <a href="" onclick="window.open(this.href); return false;" 
-    onkeypress="window.open(this.href); return false;" data-toggle="tooltip" title="Map"><span class="glyphicon glyphicon-map-marker location"></span></a>
-  </div>
+    <div id="mySidenav" class="sidenav">
+      <a data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home home"></span></a>
+      <a href="tokyo.html" data-toggle="tooltip" title="Tokyo">Toyko</a>
+      <a href="kyoto.html" data-toggle="tooltip" title="Kyoto">Kyoto</a>
+      <a href="osaka.html" data-toggle="tooltip" title="Osaka">Osaka</a>
+      <a href="hokkaido.html" data-toggle="tooltip" title="Hokkaido">Hokkaido</a>
+    </div>
+    <div id="Carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#Carousel" data-slide-to="1"></li>
+      <li data-target="#Carousel" data-slide-to="2"></li>
+      <li data-target="#Carousel" data-slide-to="3"></li>
+      <li data-target="#Carousel" data-slide-to="4"></li>
+      <li data-target="#Carousel" data-slide-to="5"></li>
+    </ol>
 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+    <div class="item">
+        <img src="">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+       <div class="item">
+        <img src="">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+       <div class="item">
+        <img src="">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+      </div>
+    <a class="left carousel-control breadcrumb" href="#Carousel" data-slide="prev" >
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+
+    <a class="right carousel-control breadcrumb" href="#Carousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
 </div></body>
 
 </html>
