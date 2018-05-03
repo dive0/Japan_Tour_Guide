@@ -40,3 +40,9 @@ html, body{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+#japan{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background:radial-gradient(circle, red 10%,white, white, white);
+}
