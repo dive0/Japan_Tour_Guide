@@ -9,6 +9,32 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    #main {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    #landing {
+      display: table;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient( rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.3)),
+      url(img/kyoto/kyoto-home.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    .centering {
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      color: white;
+    }
+  </style>
+
   <script>
     var dblclick = 0;
 
@@ -33,15 +59,14 @@
     });
   </script>
   <div id="main"> <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
+    <!-- Navbar -->
     <div id="mySidenav" class="sidenav">
       <a href="home.html" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home home"></span></a>
       <a href="tokyo.html" data-toggle="tooltip" title="Tokyo">Toyko</a>
       <a href="osaka.html" data-toggle="tooltip" title="Osaka">Osaka</a>
       <a href="hokkaido.html" data-toggle="tooltip" title="Hokkaido">Hokkaido</a>
     </div>
-    <div id="Carousel" class="carousel slide">
-    <ol class="carousel-indicators">
+<ol class="carousel-indicators">
       <li data-target="#Carousel" data-slide-to="0" class="active"></li>
       <li data-target="#Carousel" data-slide-to="1"></li>
       <li data-target="#Carousel" data-slide-to="2"></li>
@@ -50,49 +75,64 @@
       <li data-target="#Carousel" data-slide-to="5"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="">
-        <div class="carousel-caption">
-        </div>      
+    <!-- Carousel -->
+    <div id="Carousel" class="carousel slide">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+        <div class="item">
+          <img src="">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+        <div class="item">
+          <img src="">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+        <div class="item">
+          <img src="">
+          <div class="carousel-caption">
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-        </div>      
-      </div>
-      <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-    <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-       <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-       <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-        </div>      
-      </div>
-      </div>
-    <a class="left carousel-control breadcrumb" href="#Carousel" data-slide="prev" >
+      <a class="left carousel-control breadcrumb" href="#Carousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
 
-    <a class="right carousel-control breadcrumb" href="#Carousel" data-slide="next">
+      <a class="right carousel-control breadcrumb" href="#Carousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
-    <h1>fjghldfkgjldfkgj</h1>
-</div></body>
+    </div>
+    <!-- Landing -->
+    <header id="landing">
+      <div class="centering">
+        <h1>Kyoto</h1>
+        <h2>京都</h2>
+      </div>
+      <!--<img id="kyoto-cover" src="img/kyoto/kyoto-home.jpg"></img>-->
+    </header>
+
+    
+  </div>
+
+</body>
+
 </html>
