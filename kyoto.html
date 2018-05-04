@@ -27,41 +27,88 @@
       background-size: cover;
     }
 
+    #landing h1 {
+      font-size: 80px;
+    }
+
+    #landing h2 {
+      font-size: 50px;
+    }
+
     .centering {
       text-align: center;
       vertical-align: middle;
       display: table-cell;
       color: white;
     }
-    
-    #about, #k-intro, #places{
+
+    #about,
+    #k-intro,
+    #places,
+    #rest {
       text-align: center;
     }
-    
-    @media(min-width: 768px){
-      #about{
+
+    @media(min-width: 768px) {
+      #landing h1 {
+        font-size: 100px;
+      }
+      #landing h2 {
+        font-size: 80px;
+      }
+      #about {
         font-size: 50px;
       }
-      #k-intro{
+      #k-intro {
+        font-size: 20px;
+      }
+      #places h1{
+        font-size: 50px;
+      }
+      #places li{
         font-size: 20px;
       }
     }
-    
-    @media(min-width: 992px){
-      #about{
+
+    @media(min-width: 992px) {
+      #landing h1 {
+        font-size: 115px;
+      }
+      #landing h2 {
+        font-size: 100px;
+      }
+      #about {
         font-size: 60px;
       }
-      #k-intro{
+      #k-intro {
         font-size: 25px;
       }
+      #places h1{
+        font-size: 60px;
+      }
+      #places li{
+        font-size: 23px;
+      }
     }
-    
-    @media(min-width: 1200px){
-      #about{
+
+    @media(min-width: 1200px) {
+      #landing h1 {
+        font-size: 130px;
+      }
+      #landing h2 {
+        font-size: 110px;
+      }
+      #about {
         font-size: 70px;
       }
-     #k-intro{
+      #k-intro {
         font-size: 30px;
+      }
+      #places h1{
+        font-size: 70px;
+      }
+      #places li{
+        font-size: 26px;
       }
     }
   </style>
@@ -99,7 +146,7 @@
       <a href="cafe.html" data-toggle="tooltip" title="Cafe">Cafe</a>
       <a href="credits.html" data-toggle="tooltip" title="Credits">Credits</a>
     </div>
-    
+
     <!-- Landing -->
     <header id="landing">
       <div class="centering">
@@ -107,29 +154,43 @@
         <h2>京都</h2>
       </div>
     </header>
-    
+
     <div class="container">
       <div class="row">
+        
         <div class="col-xs-12 col-md-offset-1 col-md-10">
           <h1 id="about">About Kyote</h1>
           <p id="k-intro">The cultural capital of Japan. Many of the old culture was preserved even if the the place is not a capital anymore.</p>
         </div>
+        
         <div class="col-xs-12 col-md-offset-1 col-md-10" id="places">
           <h1>Top places to visit</h1>
+          
           <li>Kinkakuji Temple: This was originally built in 1397 as shogun Ashikaga Yoshimitsu’s residence. It was covered in gold leaf.</li><br>
           <li>Fushimi Inari-taisha Shrine: This is one of the many shrines in Japan. It was built to honor Inari, the Shinto god of rice.</li><br>
           <li>Shijo Street Shopping Area: You will find the Takashimaya, Daimaru, and Marui department stores and fashion brands. There are fashion and Kyoto specialty foods and crafts across the Kamo River toward Yasaka Shrine.</li><br>
           <li>Teramachi and Shinkyogoku Shopping Arcades: The place are packed with shops and restaurants that everyday clothes and goods. There’s also the Nishiki Market, anarrow food market street known as "Kyoto's Kitchen".</li><br>
-          <li>JR Kyoto Station Shopping Area: Porta underground shopping mall, a Aeon shopping mall south of the station, and big retailers. There’s Isetan department store and "The Cube" shopping center in the Kyoto Station building, which houses various souvenir shops, boutiques and restaurants.</li><br>
+          <li>JR Kyoto Station Shopping Area: Porta underground shopping mall, a Aeon shopping mall south of the station, and big retailers. There’s Isetan department store and "The Cube" shopping center in the Kyoto Station building, which houses various
+            souvenir shops, boutiques and restaurants.</li><br>
           <li>Eastern Higashiyama District: There’s traditional, old Kyoto atmosphere. There are a lot of souvenirs, specialty foods and handicrafts. </li><br>
           <li>Kyoto Handicraft Center: The first floor contains a lot of high end items, while the upper floors sells less expensive souvenirs.</li><br>
           <li>Flea Markets: This is held every month on the 21st at Toji Temple. Others markets are held every month on the 25th at Kitano Tenmangu Shrine. The markets sells vendors selling clothes, tools, antiques, art and plants.</li><br>
         </div>
-        
-        <h1 id="rest">Restaurants</h1>
-        <div class="col-xs-12 col-md-offset-1 col-md-10">
-          
-          
+
+        <div class="col-xs-12 col-md-offset-1 col-md-10" id="rest">
+          <h1>Restaurants</h1>
+          <div class="col-xs-12 col-md-6">
+            <h2>Fine Dining</h2>
+            <li>Restaurant Matsukiya, Kyoto Shijo: Japanese steakhouse</li><br>
+            <li>Premium Pound Sanjo Kiyamachi: Steakhouse and Barbecue</li><br>
+            <li>Jiki Miyazawa: Has great kaiseki dinner</li><br>
+          </div>
+          <div class="-xs-12 col-md-6">
+            <h2>Local Cuisine</h2>
+            <li>Okonomiyaki Katsu: A Japanese restaurant that serves yakisoba, noodles, and more delicious meals.</li><br>
+            <li>Teppan Tavern Tenamonya: Steakhouse and pub (for people who likes alcohol).</li><br>
+            <li>Sushi Naritaya: A great place for people who to have good tasting sushi and seafoods.</li><br>
+          </div>
         </div>
       </div>
     </div>
