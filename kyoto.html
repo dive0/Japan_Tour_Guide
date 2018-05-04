@@ -33,6 +33,37 @@
       display: table-cell;
       color: white;
     }
+    
+    #about, #k-intro{
+      text-align: center;
+    }
+    
+    @media(min-width: 768px){
+      #about{
+        font-size: 50px;
+      }
+      #k-intro{
+        font-size: 20px;
+      }
+    }
+    
+    @media(min-width: 992px){
+      #about{
+        font-size: 60px;
+      }
+      #k-intro{
+        font-size: 25px;
+      }
+    }
+    
+    @media(min-width: 1200px){
+      #about{
+        font-size: 70px;
+      }
+     #k-intro{
+        font-size: 30px;
+      }
+    }
   </style>
 
   <script>
@@ -58,7 +89,7 @@
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
-  <div id="main"> <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <div id="main"><span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     <!-- Navbar -->
     <div id="mySidenav" class="sidenav">
       <a href="home.html" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home home"></span></a>
@@ -66,72 +97,36 @@
       <a href="osaka.html" data-toggle="tooltip" title="Osaka">Osaka</a>
       <a href="hokkaido.html" data-toggle="tooltip" title="Hokkaido">Hokkaido</a>
     </div>
-<ol class="carousel-indicators">
-      <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#Carousel" data-slide-to="1"></li>
-      <li data-target="#Carousel" data-slide-to="2"></li>
-      <li data-target="#Carousel" data-slide-to="3"></li>
-      <li data-target="#Carousel" data-slide-to="4"></li>
-      <li data-target="#Carousel" data-slide-to="5"></li>
-    </ol>
-
-    <!-- Carousel -->
-    <div id="Carousel" class="carousel slide">
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="">
-          <div class="carousel-caption">
-          </div>
-        </div>
-        <div class="item">
-          <img src="">
-          <div class="carousel-caption">
-          </div>
-        </div>
-        <div class="item">
-          <img src="">
-          <div class="carousel-caption">
-
-          </div>
-        </div>
-        <div class="item">
-          <img src="">
-          <div class="carousel-caption">
-
-          </div>
-        </div>
-        <div class="item">
-          <img src="">
-          <div class="carousel-caption">
-
-          </div>
-        </div>
-        <div class="item">
-          <img src="">
-          <div class="carousel-caption">
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control breadcrumb" href="#Carousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-
-      <a class="right carousel-control breadcrumb" href="#Carousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-    </div>
     <!-- Landing -->
     <header id="landing">
       <div class="centering">
         <h1>Kyoto</h1>
         <h2>京都</h2>
       </div>
-      <!--<img id="kyoto-cover" src="img/kyoto/kyoto-home.jpg"></img>-->
     </header>
-
     
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-1 col-md-10">
+          <h1 id="about">About Kyote</h1>
+          <p id="k-intro">The cultural capital of Japan. Many of the old culture was preserved even if the the place is not a capital anymore.</p>
+        </div>
+        <div class="col-xs-12">
+          <h1>Top places to visit</h1>
+          <li>Kinkakuji Temple: This was originally built in 1397 as shogun Ashikaga Yoshimitsu’s residence. It was covered in gold leaf.</li>
+          <li>Fushimi Inari-taisha Shrine: This is one of the many shrines in Japan. It was built to honor Inari, the Shinto god of rice.</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+      </div>
+    </div>
+
   </div>
+
 
 </body>
 
