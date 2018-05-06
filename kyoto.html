@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Arsenal|Libre+Baskerville|PT+Sans+Narrow|Pathway+Gothic+One" rel="stylesheet">
 
   <style>
     #main {
@@ -26,13 +27,14 @@
       url(img/kyoto/kyoto-home.jpg) no-repeat center;
       background-size: cover;
     }
-    
-    img{
+
+    img {
       width: 100%;
     }
 
     #landing h1 {
       font-size: 80px;
+      font-family: PT Sans Narrow, serif;
     }
 
     #landing h2 {
@@ -44,6 +46,21 @@
       vertical-align: middle;
       display: table-cell;
       color: white;
+    }
+
+    h1 {
+      font-family: Libre Baskerville, serif;
+    }
+
+    #rest h2 {
+      font-family: Pathway Gothic One, serif;
+    }
+
+    #places li,
+    #rest li,
+    #k-intro {
+      font-family: Arsenal, serif;
+      font-size: 25px;
     }
 
     #about,
@@ -65,12 +82,13 @@
       #rest h1 {
         font-size: 50px;
       }
-      #k-intro {
-        font-size: 20px;
+      #rest h2 {
+        font-size: 40px;
       }
+      #k-intro,
       #places li,
       #rest li {
-        font-size: 20px;
+        font-size: 30px;
       }
     }
 
@@ -86,12 +104,13 @@
       #rest h1 {
         font-size: 60px;
       }
-      #k-intro {
-        font-size: 25px;
+      #rest h2 {
+        font-size: 45px;
       }
+      #k-intro,
       #places li,
       #rest li {
-        font-size: 23px;
+        font-size: 32px;
       }
     }
 
@@ -107,12 +126,13 @@
       #rest h1 {
         font-size: 70px;
       }
-      #k-intro {
-        font-size: 30px;
+      #rest h2 {
+        font-size: 50px;
       }
+      #k-intro,
       #places li,
       #rest li {
-        font-size: 26px;
+        font-size: 35px;
       }
     }
   </style>
@@ -166,21 +186,21 @@
         <!-- About Kyoto-->
         <div class="col-xs-12 col-md-offset-1 col-md-10">
           <h1 id="about">About Kyote</h1>
-          <p id="k-intro">The cultural capital of Japan. Many of the old culture was preserved even if the the place is not a capital anymore.</p>
+          <p id="k-intro">The cultural capital of Japan. Many of the old cultures were preserved even if the place is not a capital anymore.</p>
         </div>
 
         <!-- Places to Visit-->
         <div class="col-xs-12 col-md-offset-1 col-md-10" id="places">
           <h1>Places To Visit/Activities To Do</h1>
           <li>Kinkakuji Temple: This was originally built in 1397 as shogun Ashikaga Yoshimitsu’s residence. It was covered in gold leaf.</li><br>
-          <li>Fushimi Inari-taisha Shrine: This is one of the many shrines in Japan. It was built to honor Inari, the Shinto god of rice.</li><br>
+          <li>Fushimi Inari-Taisha Shrine: This is one of the many shrines in Japan. It was built to honor Inari, the Shinto god of rice.</li><br>
           <li>Shijo Street Shopping Area (Shijo Dori): You will find the Takashimaya, Daimaru, and Marui department stores and fashion brands. There are fashion and Kyoto specialty foods and crafts across the Kamo River toward Yasaka Shrine.</li><br>
-          <li>Teramachi and Shinkyogoku Shopping Arcades: The place are packed with shops and restaurants that everyday clothes and goods. There’s also the Nishiki Market, anarrow food market street known as "Kyoto's Kitchen".</li><br>
-          <li>JR Kyoto Station Shopping Area: Porta underground shopping mall, a Aeon shopping mall south of the station, and big retailers. There’s Isetan department store and "The Cube" shopping center in the Kyoto Station building, which houses various
+          <li>Teramachi and Shinkyogoku Shopping Arcades: The place is packed with shops and restaurants that everyday clothes and goods. There’s also the Nishiki Market, a narrow food market street known as "Kyoto's Kitchen".</li><br>
+          <li>JR Kyoto Station Shopping Area: Porta underground shopping mall, an Aeon shopping mall south of the station, and big retailers. There’s Isetan department store and "The Cube" shopping center in the Kyoto Station building, which houses various
             souvenir shops, boutiques and restaurants.</li><br>
-          <li>Eastern Higashiyama District: There’s traditional, old Kyoto atmosphere. There are a lot of souvenirs, specialty foods and handicrafts. </li><br>
-          <li>Kyoto Handicraft Center: The first floor contains a lot of high end items, while the upper floors sells less expensive souvenirs.</li><br>
-          <li>Flea Markets: This is held every month on the 21st at Toji Temple. Others markets are held every month on the 25th at Kitano Tenmangu Shrine. The markets sells vendors selling clothes, tools, antiques, art and plants.</li><br>
+          <li>Eastern Higashiyama District: There’s traditional, old Kyoto atmosphere. There are a lot of souvenirs, specialty foods, and handicrafts. </li><br>
+          <li>Kyoto Handicraft Center: The first floor contains a lot of high-end items, while the upper floors sell less expensive souvenirs..</li><br>
+          <li>Flea Markets: This is held every month on the 21st at Toji Temple. Others markets are held every month on the 25th at Kitano Tenmangu Shrine. The markets sell vendors selling clothes, tools, antiques, art, and plants.</li><br>
         </div>
 
         <div class="container"></div>
@@ -264,12 +284,12 @@
           <img src="img/kyoto/Okonomiyaki-Katsu.jpeg"><br><br>
           <li>Teppan Tavern Tenamonya: Steakhouse and pub (for people who likes alcohol).</li><br>
           <img src="img/kyoto/Teppan-Tavern-Tenamonya.jpg"><br><br>
-          <li>Sushi Naritaya: A great place for people who to have good tasting sushi and seafoods.</li><br>
+          <li>Sushi Naritaya: A great place for people to enjoy good tasting sushi and seafood</li><br>
           <img src="img/kyoto/Sushi-Naritaya.jpg"><br><br>
         </div>
       </div>
-      
-      
+
+
     </div>
   </div>
 

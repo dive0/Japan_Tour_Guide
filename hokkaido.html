@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cantata+One|Coustard|Fanwood+Text|Reem+Kufi|Rosario" rel="stylesheet">
 
   <style>
     #main {
@@ -29,6 +30,7 @@
 
     #landing h1 {
       font-size: 80px;
+      font-family: Cantata One, serif;
     }
 
     #landing h2 {
@@ -38,13 +40,32 @@
     img {
       width: 100%;
     }
+
     .centering {
       text-align: center;
       vertical-align: middle;
       display: table-cell;
       color: yellow;
     }
-
+    
+    h1 {
+      font-family: Coustard, seif;
+    }
+    
+    strong {
+      font-family: Fanwood Text, seif;
+    }
+    
+    #rest h2 {
+      font-family: Reem Kufi, serif;
+    }
+    
+    #h-intro,
+    #places li,
+    #rest li {
+        font-family: Rosario, serif;
+        font-size: 22px;
+    }
     #about,
     #h-intro,
     .about,
@@ -65,15 +86,13 @@
       #rest h1 {
         font-size: 50px;
       }
-      #h-intro {
-        font-size: 20px;
-      }
       .about h2 {
         font-size: 35px;
       }
+      #h-intro,
       #places li,
       #rest li {
-        font-size: 20px;
+        font-size: 25px;
       }
     }
 
@@ -89,15 +108,13 @@
       #rest h1 {
         font-size: 60px;
       }
-      #h-intro {
-        font-size: 25px;
-      }
       .about h2 {
         font-size: 40px;
       }
+      #h-intro,
       #places li,
       #rest li {
-        font-size: 23px;
+        font-size: 27px;
       }
     }
 
@@ -113,15 +130,13 @@
       #rest h1 {
         font-size: 70px;
       }
-      #h-intro {
-        font-size: 30px;
-      }
       .about h2 {
         font-size: 45px;
       }
+      #h-intro,
       #places li,
       #rest li {
-        font-size: 26px;
+        font-size: 29px;
       }
     }
   </style>
@@ -174,85 +189,86 @@
         <!-- About Hokkaido-->
         <div class="col-xs-12 col-md-offset-1 col-md-10">
           <h1 id="about">About Hokkaido</h1>
-          <p id="h-intro">The is Japan’s northernmost island. It is largest of Japan’s 47 prefectures and Japan’s second largest island. There’s 4 distinct seasons, which allows the residents to have something to do all year round. The island is filled with untouched
+          <p id="h-intro">The is Japan’s northernmost island. It is largest of Japan’s 47 prefectures and Japan’s second largest island. There are 4 distinct seasons, which allows the residents to have something to do all year round. The island is filled with untouched
             wilderness. The island is renowned for the high quality and freshness of its seafood.</p>
           <div class="col-xs-12 col-md-6 about">
             <h2><strong>Sapporo 札幌</strong></h2>
-            <p id="h-intro">The largest city on Hokkaido. This is the snowiest city on the planet with close to 6 meter of snow a year. The city is bustling with excitements, entertainments, nightlife, and more.</p>
+            <p id="h-intro">The largest city in Hokkaido. This is the snowiest city on the planet with close to 6 meters of snow a year. The city is bustling with excitements, entertainments, nightlife, and more.</p>
           </div>
           <div class="col-xs-12 col-md-6 about">
             <h2><strong>Hakodate 函館市</strong></h2>
-            <p id="h-intro">The third largest city on Hokkaido. The city is filled with old western houses, churches and warehouses since it was the first port opened to the west. There’s Goryokaku, a fort with a star shaped moat, which is one of the popular attraction.</p>
+            <p id="h-intro">The third largest city in Hokkaido. The city is filled with old western houses, churches, and warehouses, since it was the first port, opened to the west. There’s Goryokaku, a fort with a star-shaped moat, which is one of the popular attraction.</p>
           </div>
         </div>
 
         <!-- Places to Visit-->
-          <div class="col-xs-12 col-md-offset-1 col-md-10" id="places">
-            <h1>Places To Visit/Activities To Do</h1>
-            <li>Hot Spring Heaven: There’s both lavish facilities in luxurious modern resorts and simple hot spring pools deep in the mountains. There are many onsen, hot spring bath, with a wilderness view.</li><br>
-            <li>Sapporo Yuki Matsuri (Snow Celebration): There are many really cool looking snow sculptures, depicting monuments, temples, cartoon characters, and sports and entertainment celebrities. These are displayed in three venues. Many more activities were added as the festival grew. Reserve a spot well in advance since there are more than two million visitors attending each year.</li><br>
-            <li>Furano: This is a small town known for its downhill and cross-country skiing destinations during the winter. In the summer, the town is known for its fields of colorful flowers.</li><br>
-          </div>
+        <div class="col-xs-12 col-md-offset-1 col-md-10" id="places">
+          <h1>Places To Visit/Activities To Do</h1>
+          <li>Hot Spring Heaven: There are both lavish facilities in luxurious modern resorts and simple hot spring pools deep in the mountains. There are many onsens, hot spring bath, with a wilderness view.</li><br>
+          <li>Sapporo Yuki Matsuri (Snow Celebration): There are many really cool looking snow sculptures, depicting monuments, temples, cartoon characters, and sports and entertainment celebrities. These are displayed in three venues. Many more activities
+            were added as the festival grew. Reserve a spot well in advance since there are more than two million visitors attending each year.</li><br>
+          <li>Furano: This is a small town known for its downhill and cross-country skiing destinations during the winter. In the summer, the town is known for its fields of colorful flowers.</li><br>
+        </div>
 
-          <div class="container"></div>
-          <div id="top-places" class="carousel slide" data-ride="carousel">
-         <!--Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#top-places" data-slide-to="0" class="active"></li>
-              <li data-target="#top-places" data-slide-to="1"></li>
-              <li data-target="#top-places" data-slide-to="2"></li>
-            </ol>
+        <div class="container"></div>
+        <div id="top-places" class="carousel slide" data-ride="carousel">
+          <!--Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#top-places" data-slide-to="0" class="active"></li>
+            <li data-target="#top-places" data-slide-to="1"></li>
+            <li data-target="#top-places" data-slide-to="2"></li>
+          </ol>
 
-         <!--Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="img/hokkaido/Hot-Spring-Heaven.jpg" class="img-thumbnail">
-              </div>
-
-              <div class="item">
-                <img src="img/hokkaido/Sapporo-Yuki-Matsuri.jpg" class="img-thumbnail">
-              </div>
-
-              <div class="item">
-                <img src="img/hokkaido/Furano.jpg" class="img-thumbnail">
-              </div>
+          <!--Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/hokkaido/Hot-Spring-Heaven.jpg" class="img-thumbnail">
             </div>
 
-         <!--Left and right controls -->
-            <a class="left carousel-control" href="#top-places" data-slide="prev" data-toggle="tooltip" title="Previous">
+            <div class="item">
+              <img src="img/hokkaido/Sapporo-Yuki-Matsuri.jpg" class="img-thumbnail">
+            </div>
+
+            <div class="item">
+              <img src="img/hokkaido/Furano.jpg" class="img-thumbnail">
+            </div>
+          </div>
+
+          <!--Left and right controls -->
+          <a class="left carousel-control" href="#top-places" data-slide="prev" data-toggle="tooltip" title="Previous">
               <span class="glyphicon glyphicon-chevron-left"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#top-places" data-slide="next" data-toggle="tooltip" title="Next">
+          <a class="right carousel-control" href="#top-places" data-slide="next" data-toggle="tooltip" title="Next">
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
             </a>
-          </div>
+        </div>
+      </div>
+
+      <!-- Restaurants -->
+      <div class="col-xs-12 col-md-offset-1 col-md-10" id="rest">
+        <h1>Restaurants</h1>
+
+        <div class="col-xs-12 col-md-6">
+          <h2>Restaurants in Sapporo </h2>
+          <li>Gotsubo: This is a seafood restaurant that serves fresh food. There oysters that can be ordered raw or grilled. </li><br>
+          <img src="img/hokkaido/Gotsubo.jpg"><br><br>
+          <li>Hyosetsu no Mon: This is a seafood restaurant where people tend to order crabs. The foods are both delicious and healthy. </li><br>
+          <img src="img/hokkaido/Hyosetsu-no-Mon.jpg"><br><br>
+          <li>Moliere: This is a French restaurant that uses fresh local ingredients from Hokkaido. The restaurant uses Hokkaido specialties to make the place unique.</li><br>
+          <img src="img/hokkaido/Moliere.jpg"><br><br>
         </div>
 
-        <!-- Restaurants -->
-        <div class="col-xs-12 col-md-offset-1 col-md-10" id="rest">
-          <h1>Restaurants</h1>
-
-          <div class="col-xs-12 col-md-6">
-            <h2>Restaurants in Sapporo </h2>
-            <li>Gotsubo: This is a seafood restaurant that serves fresh food. There oysters that can be ordered raw or grilled. </li><br>
-            <img src="img/hokkaido/Gotsubo.jpg"><br><br>
-            <li>Hyosetsu no Mon: This is a seafood restaurant where people tends to order crabs. The foods are both delicious and healthy. </li><br>
-          <img src="img/hokkaido/Hyosetsu-no-Mon.jpg"><br><br>
-            <li>Moliere: This is a French restaurant that uses fresh local ingredients from Hokkaido. The restaurant uses Hokkaido specialities to make the place unique.</li><br>
-            <img src="img/hokkaido/Moliere.jpg"><br><br>
-          </div>
-
-          <div class="-xs-12 col-md-6">
-            <h2>Restaurants in Hakodate</h2>
-            <li>Sushidokoro Kihara: This is a sushi restaurant. Sushi lovers will enjoy coming here due to the taste of the food.</li><br>
-            <img src="img/hokkaido/Sushidokoro-Kihara.jpg"><br><br>
-            <li>Rokkatei, Goryokaku: This is a cafe. People can spend their free time with their friend while having tasty cake and tea. There’s a great view of the Goryokaku Park.</li><br>
-            <img src="img/hokkaido/Rokkatei-Goryokaku.jpg"><br><br>
-            <li>Uni Murakami, Hakodate Honten: This is a seafood restaurant known for their uni. The uni lovers would try out the many dishes that the restaurant serves with their friends.</li><br>
-            <img src="img/hokkaido/uni-murakami-hakodate.jpg"><br><br>
-          </div>
+        <div class="-xs-12 col-md-6">
+          <h2>Restaurants in Hakodate</h2>
+          <li>Sushidokoro Kihara: This is a sushi restaurant. Sushi lovers will enjoy coming here due to the taste of the food.</li><br>
+          <img src="img/hokkaido/Sushidokoro-Kihara.jpg"><br><br>
+          <li>Rokkatei, Goryokaku: This is a cafe. People can spend their free time with their friend while having tasty cake and tea. There’s a great view of the Goryokaku Park.</li><br>
+          <img src="img/hokkaido/Rokkatei-Goryokaku.jpg"><br><br>
+          <li>Uni Murakami, Hakodate Honten: This is a seafood restaurant known for their uni. The uni lovers would try out the many dishes that the restaurant serves with their friends.</li><br>
+          <img src="img/hokkaido/uni-murakami-hakodate.jpg"><br><br>
+        </div>
       </div>
     </div>
 </body>
