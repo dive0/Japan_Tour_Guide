@@ -9,6 +9,124 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    #main {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    #landing {
+      display: table;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient( rgba(0, 150, 0, 0.8),
+      rgba(0, 0, 0, 0.3)),
+      url(img/hokkaido/hokkaido-home.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    #landing h1 {
+      font-size: 80px;
+    }
+
+    #landing h2 {
+      font-size: 50px;
+    }
+
+    img {
+      width: 100%;
+      height: 1184px;
+    }
+    .centering {
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      color: yellow;
+    }
+
+    #about,
+    #h-intro,
+    .about,
+    #places,
+    #rest {
+      text-align: center;
+    }
+
+    @media(min-width: 768px) {
+      #landing h1 {
+        font-size: 100px;
+      }
+      #landing h2 {
+        font-size: 80px;
+      }
+      #about,
+      #places h1,
+      #rest h1 {
+        font-size: 50px;
+      }
+      #h-intro {
+        font-size: 20px;
+      }
+      .about h2 {
+        font-size: 35px;
+      }
+      #places li,
+      #rest li {
+        font-size: 20px;
+      }
+    }
+
+    @media(min-width: 992px) {
+      #landing h1 {
+        font-size: 115px;
+      }
+      #landing h2 {
+        font-size: 100px;
+      }
+      #about,
+      #places h1,
+      #rest h1 {
+        font-size: 60px;
+      }
+      #h-intro {
+        font-size: 25px;
+      }
+      .about h2 {
+        font-size: 40px;
+      }
+      #places li,
+      #rest li {
+        font-size: 23px;
+      }
+    }
+
+    @media(min-width: 1200px) {
+      #landing h1 {
+        font-size: 130px;
+      }
+      #landing h2 {
+        font-size: 110px;
+      }
+      #about,
+      #places h1,
+      #rest h1 {
+        font-size: 70px;
+      }
+      #h-intro {
+        font-size: 30px;
+      }
+      .about h2 {
+        font-size: 45px;
+      }
+      #places li,
+      #rest li {
+        font-size: 26px;
+      }
+    }
+  </style>
+
   <script>
     var dblclick = 0;
 
@@ -42,59 +160,102 @@
       <a href="cafe.html" data-toggle="tooltip" title="Cafe">Cafe</a>
       <a href="credits.html" data-toggle="tooltip" title="Credits">Credits</a>
     </div>
-    <div id="Carousel" class="carousel slide">
-    <ol class="carousel-indicators">
-      <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#Carousel" data-slide-to="1"></li>
-      <li data-target="#Carousel" data-slide-to="2"></li>
-      <li data-target="#Carousel" data-slide-to="3"></li>
-      <li data-target="#Carousel" data-slide-to="4"></li>
-      <li data-target="#Carousel" data-slide-to="5"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="">
-        <div class="carousel-caption">
-        </div>      
+    <!-- Landing -->
+    <header id="landing">
+      <div class="centering">
+        <h1>Hokkaido</h1>
+        <h2>北海道</h2>
       </div>
-      <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-        </div>      
-      </div>
-      <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-    <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-       <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-       <div class="item">
-        <img src="">
-        <div class="carousel-caption">
-        </div>      
-      </div>
-      </div>
-    <a class="left carousel-control breadcrumb" href="#Carousel" data-slide="prev" >
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
+    </header>
 
-    <a class="right carousel-control breadcrumb" href="#Carousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-</div></body>
+    <div class="container">
+      <div class="row">
+
+        <!-- About Hokkaido-->
+        <div class="col-xs-12 col-md-offset-1 col-md-10">
+          <h1 id="about">About Hokkaido</h1>
+          <p id="h-intro">The is Japan’s northernmost island. It is largest of Japan’s 47 prefectures and Japan’s second largest island. There’s 4 distinct seasons, which allows the residents to have something to do all year round. The island is filled with untouched
+            wilderness. The island is renowned for the high quality and freshness of its seafood.</p>
+          <div class="col-xs-12 col-md-6 about">
+            <h2><strong>Sapporo 札幌</strong></h2>
+            <p id="h-intro">The largest city on Hokkaido. This is the snowiest city on the planet with close to 6 meter of snow a year. The city is bustling with excitements, entertainments, nightlife, and more.</p>
+          </div>
+          <div class="col-xs-12 col-md-6 about">
+            <h2><strong>Hakodate 函館市</strong></h2>
+            <p id="h-intro">The third largest city on Hokkaido. The city is filled with old western houses, churches and warehouses since it was the first port opened to the west. There’s Goryokaku, a fort with a star shaped moat, which is one of the popular attraction.</p>
+          </div>
+        </div>
+
+        <!-- Places to Visit-->
+          <div class="col-xs-12 col-md-offset-1 col-md-10" id="places">
+            <h1>Places To Visit/Activities To Do</h1>
+            <li>Hot Spring Heaven: There’s both lavish facilities in luxurious modern resorts and simple hot spring pools deep in the mountains. There are many onsen, hot spring bath, with a wilderness view.</li><br>
+            <li>Sapporo Yuki Matsuri (Snow Celebration): There are many really cool looking snow sculptures, depicting monuments, temples, cartoon characters, and sports and entertainment celebrities. These are displayed in three venues. Many more activities were added as the festival grew. Reserve a spot well in advance since there are more than two million visitors attending each year.</li><br>
+            <li>Furano: This is a small town known for its downhill and cross-country skiing destinations during the winter. In the summer, the town is known for its fields of colorful flowers.</li><br>
+          </div>
+
+          <div class="container"></div>
+          <div id="top-places" class="carousel slide" data-ride="carousel">
+         <!--Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#top-places" data-slide-to="0" class="active"></li>
+              <li data-target="#top-places" data-slide-to="1"></li>
+              <li data-target="#top-places" data-slide-to="2"></li>
+            </ol>
+
+         <!--Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/hokkaido/Hot-Spring-Heaven.jpg" class="img-thumbnail">
+              </div>
+
+              <div class="item">
+                <img src="img/hokkaido/Sapporo-Yuki-Matsuri.jpg" class="img-thumbnail">
+              </div>
+
+              <div class="item">
+                <img src="img/hokkaido/Furano.jpg" class="img-thumbnail">
+              </div>
+            </div>
+
+         <!--Left and right controls -->
+            <a class="left carousel-control" href="#top-places" data-slide="prev" data-toggle="tooltip" title="Previous">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#top-places" data-slide="next" data-toggle="tooltip" title="Next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Restaurants -->
+        <!--<div class="col-xs-12 col-md-offset-1 col-md-10" id="rest">-->
+        <!--  <h1>Restaurants</h1>-->
+
+        <!--  <div class="col-xs-12 col-md-6">-->
+        <!--    <h2>Fine Dining</h2>-->
+        <!--    <li>Restaurant Matsukiya, Kyoto Shijo: Japanese steakhouse</li><br>-->
+        <!--    <img src="img/kyoto/Restaurant-Matsukiya-Kyoto-Shijo.jpg"><br><br>-->
+        <!--    <li>Premium Pound Sanjo Kiyamachi: Steakhouse and Barbecue</li><br>-->
+        <!--    <img src="img/kyoto/Premium-Pound-Sanjo-Kiyamachi.jpg"><br><br>-->
+        <!--    <li>Jiki Miyazawa: Has great kaiseki dinner</li><br>-->
+        <!--    <img src="img/kyoto/Jiki-Miyazawa.jpg"><br><br>-->
+        <!--  </div>-->
+
+        <!--  <div class="-xs-12 col-md-6">-->
+        <!--    <h2>Local Cuisine</h2>-->
+        <!--    <li>Okonomiyaki Katsu: A Japanese restaurant that serves yakisoba, noodles, and more delicious meals.</li><br>-->
+        <!--    <img src="img/kyoto/Okonomiyaki-Katsu.jpeg"><br><br>-->
+        <!--    <li>Teppan Tavern Tenamonya: Steakhouse and pub (for people who likes alcohol).</li><br>-->
+        <!--    <img src="img/kyoto/Teppan-Tavern-Tenamonya.jpg"><br><br>-->
+        <!--    <li>Sushi Naritaya: A great place for people who to have good tasting sushi and seafoods.</li><br>-->
+        <!--    <img src="img/kyoto/Sushi-Naritaya.jpg"><br><br>-->
+        <!--  </div>-->
+      </div>
+    </div>
+</body>
 
 </html>
