@@ -27,7 +27,7 @@ html, body{
 #main {
     transition: margin-left .4s;
     padding: 20px;
-    position: fixed;
+     position: absolute;
 }
 #mySidenav a:hover { 
     color: #f9fccf;
@@ -60,4 +60,13 @@ img{
 }
 #map{
     width:100%;
+}
+@media(min-width: 768px) {
+    
+}
+@media(min-width: 992px) {
+    
+}
+@media(min-width: 1200px) {
+    
 }
