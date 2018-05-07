@@ -40,11 +40,20 @@ html, body{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+#credits{
+    background:radial-gradient(circle, red 10%,white, white, white);
+
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #japan{
     width: 100%;
     position: absolute;
     height: 100%;
-    background:radial-gradient(circle, red 10%,white, white, white);
+    background:url(img/bgjapan.jpg) no-repeat ;
 }
 img{
     width: 500px;
