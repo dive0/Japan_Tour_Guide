@@ -92,7 +92,20 @@
     <a class="right carousel-control breadcrumb" href="#Carousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
-    
+    <!--Google Map-->
+    <div id="map" ></div><br>
+    <script>
+      function myMap() {
+      var mapOptions = {
+      center: new google.maps.LatLng(34.6867877,135.4733433),
+      zoom: 9,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+      }
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      }
+    </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAxe9QTeNBaY6WrSpyIcV4JLLguULT7nE&callback=myMap"></script>
+
 </div></body>
 
 </html>

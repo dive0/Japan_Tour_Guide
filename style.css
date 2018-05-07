@@ -49,3 +49,6 @@ html, body{
 img{
     width: 500px;
 }
+#map{
+    width:100%;
+}

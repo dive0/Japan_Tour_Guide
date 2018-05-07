@@ -95,7 +95,9 @@
         font-size: 25px;
       }
     }
-
+    #map{
+      
+    }
     @media(min-width: 992px) {
       #landing h1 {
         font-size: 115px;
@@ -270,6 +272,20 @@
           <img src="img/hokkaido/uni-murakami-hakodate.jpg"><br><br>
         </div>
       </div>
+      <!--Google Map-->
+      <div id="map" style="width:100%;height:500px"></div><br>
+      <script>
+      function myMap() {
+      var mapOptions = {
+      center: new google.maps.LatLng(43.6164043,142.3713025),
+      zoom: 9,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+      }
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      }
+    </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAxe9QTeNBaY6WrSpyIcV4JLLguULT7nE&callback=myMap"></script>
+
     </div>
 </body>
 
