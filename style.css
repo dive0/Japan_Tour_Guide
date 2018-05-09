@@ -53,10 +53,10 @@ body {
         opacity: 1;
     }
 }
-
-#credits {
-    background: radial-gradient(circle, red 10%, white, white, white);
-    min-height: 400px;
+#credits{
+    background:radial-gradient(circle, red 10%,white, white, white);
+    min-height: 400px; 
+    min-width: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,9 +71,22 @@ body {
     rgba(100, 100, 100, 0.3)), url(img/bgjapan.jpg) no-repeat center center;
     background-size: cover;
 }
-
-@media(min-width: 768px) {}
-
-@media(min-width: 992px) {}
-
-@media(min-width: 1200px) {}
+#osaka{
+    background:url(img/osaka/osaka-home.jpg) no-repeat ;
+    min-height: 400px; 
+    min-width: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+@media(min-width: 768px) {
+    
+}
+@media(min-width: 992px) {
+    
+}
+@media(min-width: 1200px) {
+    
+}
