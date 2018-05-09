@@ -45,8 +45,8 @@ html, body{
 }
 #credits{
     background:radial-gradient(circle, red 10%,white, white, white);
-
     min-height: 400px; 
+    min-width: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,16 @@ html, body{
     height: 100%;
     background:url(img/bgjapan.jpg) no-repeat ;
 }
-
+#osaka{
+    background:url(img/osaka/osaka-home.jpg) no-repeat ;
+    min-height: 400px; 
+    min-width: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 @media(min-width: 768px) {
     
 }

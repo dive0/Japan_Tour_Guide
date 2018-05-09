@@ -9,9 +9,20 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
+  <script src="https://query.yahooapis.com/v1/public/yql?q=select wind from weather.forecast where woeid in (select woeid from geo.places(1) where text='chicago, il')&format=json&callback=callbackFunction"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+        var city = "Tokyo";
+        var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='c'"
+        //change city variable dynamically as required
+        $.getJSON("" + searchtext + "&format=json").success(function(data) {
+          console.log(data);
+          $('#temp').html("Temperature in " + city + " is " + Math.round((9 / 5) * data.query.results.channel.item.condition.temp + 32) + "°C");
+        });
+      });
+      
     var dblclick = 0;
-
     function openNav() {
       document.getElementById("mySidenav").style.width = "120px";
       document.getElementById("main").style.marginLeft = "140px";
@@ -34,7 +45,8 @@
       url(img/) no-repeat center;
       background-size: cover;
     }
-  .centering {
+
+    .centering {
       text-align: center;
       vertical-align: middle;
       display: table-cell;
@@ -48,40 +60,41 @@
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
+  <div id="temp">Loading........</div>
   <div id="main"> <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-<div id="Carousel" class="carousel slide">
+    <div id="Carousel" class="carousel slide">
 
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="img/tokyo/tokyo-img1.jpg">
-        <div class="carousel-caption">
-        </div>      
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/tokyo/tokyo-img1.jpg">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/tokyo/tokyo-img2.jpg">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/tokyo/tokyo-img3.jpg">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/tokyo/tokyo-img4.jpg">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/tokyo/tokyo-img5.jpg">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <img src="img/tokyo/tokyo-img2.jpg">
-        <div class="carousel-caption">
-        </div>      
-      </div>
-      <div class="item">
-        <img src="img/tokyo/tokyo-img3.jpg">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-    <div class="item">
-        <img src="img/tokyo/tokyo-img4.jpg">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-       <div class="item">
-        <img src="img/tokyo/tokyo-img5.jpg">
-        <div class="carousel-caption">
-          
-        </div>      
-      </div>
-      </div>
-      </div>
+    </div>
     <div id="mySidenav" class="sidenav">
       <a href="home.html" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home home"></span></a>
       <a href="kyoto.html" data-toggle="tooltip" title="Kyoto">Kyoto</a>
@@ -89,24 +102,27 @@
       <a href="hokkaido.html" data-toggle="tooltip" title="Hokkaido">Hokkaido</a>
       <a href="cafe.html" data-toggle="tooltip" title="Cafe">Cafe</a>
       <a href="credits.html" data-toggle="tooltip" title="Credits">Credits</a>
-    </div>
-    <br> 
-     
-     <div id="map" style="width:100%;height:500px"></div>
+    </div></div>
+    <br>
+  <div class="container">
+    <div id="map" style="width:100%;height:500px"></div>
+    
     <script>
+      
       function myMap() {
-      var mapOptions = {
-      center: new google.maps.LatLng(35.6236022,139.4899661),
-      zoom: 9,
-      mapTypeId: google.maps.MapTypeId.HYBRID
-      }
-      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var mapOptions = {
+          center: new google.maps.LatLng(35.6236022, 139.4899661),
+          zoom: 9,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
       }
     </script>
 
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAxe9QTeNBaY6WrSpyIcV4JLLguULT7nE&callback=myMap"></script>
-     
-     
-     </div></body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAxe9QTeNBaY6WrSpyIcV4JLLguULT7nE&callback=myMap"></script>
+
+
+  </div>
+</body>
 
 </html>
