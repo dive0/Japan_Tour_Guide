@@ -56,7 +56,6 @@ body {
 
 #credits {
     background: radial-gradient(circle, red 10%, white, white, white);
-
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
