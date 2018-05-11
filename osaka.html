@@ -43,7 +43,6 @@
 
     .container {
       position: relative;
-      width: 50%;
     }
 
     .image {
@@ -56,8 +55,6 @@
     .middle {
       transition: .5s ease;
       opacity: 0;
-
-      transform: translate(0px, -120px);
       text-align: center;
     }
     .image:hover  {
@@ -65,7 +62,7 @@
     }
 
     .middle:hover  {
-      opacity: 1;
+      opacity: .7;
     }
 
     .text {
@@ -90,17 +87,18 @@
 
     }
     .box{
-      text-align: center;
       vertical-align: middle;
+      padding:50px;
+width: 50%;
       display: table-cell;
     }
     .gatsu{
       font-size:25px;
       cursor:pointer;
-      color:#ffff
+      color:#fff;
     }
     @media(min-width: 768px) {
-      .carousel, .box {
+      .carousel{
         width: 600px;
       }
       .container {
@@ -127,7 +125,7 @@
     }
 
     @media(min-width: 992px) {
-      .carousel, .box{
+      .carousel{
         width: 740px;
         
       }
@@ -152,7 +150,7 @@
     }
 
     @media(min-width: 1200px) {
-      .carousel, .box {
+      .carousel{
         width: 820px;
       }
       .container {
@@ -184,7 +182,7 @@
     });
   </script>
   <div id="main">
-    <div id="osaka"><div class="gatsu" onclick="openNav()"><font color="ffff">&#9776; open</font></div>
+    <div id="osaka"><div class="gatsu" onclick="openNav()"><font color="ffff"><span class="glyphicon glyphicon-th-list"></span></font></div>
 
       <div id="mySidenav" class="sidenav">
         <a href="home.html" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home home"></span></a>
@@ -260,14 +258,14 @@
             <span class="sr-only">Next</span>
             </a>
       </div>
-      <div class="middle"><div class="box"><h1><center> If you are on a budget, I would highly recommend you to travel to Osaka(<strong>大阪</strong>). Osaka has lots of tasty street food, and at some parts of Osaka, after 6-7pm, restaurants put their food up for sale. Since all their ingredients are fresh and prepared in the morning, food that is left overnight is usually thrown out.
-Osaka is a great place if you want to learn about Japan’s culture and see ancient historical sites.</center></h1></div>
-        <img src="img/osaka/osaka11.jpg" class="image" style="width:100%">
+      <div class="box"><div class="col-sm-offset-2 col-md-6 col-sm-8 col-xs-12 col-md-offset-3"><h1> If you are on a budget, I would highly recommend you to travel to Osaka(<strong>大阪</strong>). Osaka has lots of tasty street food, and at some parts of Osaka, after 6-7pm, restaurants put their food up for sale. Since all their ingredients are fresh and prepared in the morning, food that is left overnight is usually thrown out.
+Osaka is a great place if you want to learn about Japan’s culture and see ancient historical sites.</h1></div></div>
+        <div class="middle"><img src="img/osaka/osaka11.jpg" class="image" style="width:100%">
         <div class="text"><font size="5px"color="blue">Osaka is a great place if you want to learn about Japan’s culture and see ancient historical sites.</font>
         </div>
       </div>
       <div class="middle"><img src="img/osaka/osaka12.jpg" class="image" style="width:100%">
-        <div class="text"><font size="5px" color="blue">Osakajo(Osaka Castle): Constructed in 1583, and over 3,300,000 sq m.</font>
+        <div class="text"><font size="5px" color="blue">Osakajo (Osaka Castle): Constructed in 1583, and over 3,300,000 sq m.</font>
         </div>
       </div>
       <div class="container-fluid">
