@@ -85,15 +85,6 @@ body {
 }
 
 @media(min-width: 768px) {
-  /*.carousel {*/
-  /*  width: 600px;*/
-  /*}*/
-  /*.container {*/
-  /*  width: 610px;*/
-  /*}*/
-  .text {
-    font-size: 30px;
-  }
   .glyphicon.glyphicon-chevron-left {
     font-size: 25px;
     visibility: visible;
@@ -115,7 +106,6 @@ body {
 }
 
 @media(min-width: 1200px) {
-
   .glyphicon.glyphicon-chevron-left {
     font-size: 55px;
   }
