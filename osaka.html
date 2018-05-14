@@ -34,6 +34,10 @@
       url(img/osaka/osaka-home.jpg) no-repeat center;
       background-size: cover;
     }
+    
+    .heading {
+      text-align: center;
+    }
 
     .centering {
       text-align: center;
@@ -57,12 +61,13 @@
       opacity: 0;
       text-align: center;
     }
-    .image:hover  {
+
+    .image:hover {
       opacity: 1;
     }
 
-    .middle:hover  {
-      opacity: .7;
+    .middle:hover {
+      opacity: .8;
     }
 
     .text {
@@ -71,34 +76,39 @@
       display: flex;
       font-family: 'Skranji', cursive;
       font-size: 16px;
-      
+
       transform: translate(0px, -150px);
       padding: 16px 32px;
+      background-color: darkgreen;
     }
 
     .carousel {
       position: relative;
       text-align: center;
     }
-    h1{
-      position:relative;
-      color:#fff;
-      padding:140px 0px;
+
+    h1 {
+      position: relative;
+      color: #fff;
+      padding: 140px 0px;
 
     }
-    .box{
+
+    .box {
       vertical-align: middle;
-      padding:50px;
-width: 50%;
+      padding: 50px;
+      width: 50%;
       display: table-cell;
     }
-    .gatsu{
-      font-size:25px;
-      cursor:pointer;
-      color:#fff;
+
+    .gatsu {
+      font-size: 25px;
+      cursor: pointer;
+      color: #fff;
     }
+
     @media(min-width: 768px) {
-      .carousel{
+      .carousel {
         width: 600px;
       }
       .container {
@@ -115,19 +125,19 @@ width: 50%;
         font-size: 25px;
         visibility: visible;
       }
-      h1{
+      h1 {
         font-size: 45px;
         line-height: 80%;
       }
-      .gatsu{
-        font-size:30px;
+      .gatsu {
+        font-size: 30px;
       }
     }
 
     @media(min-width: 992px) {
-      .carousel{
+      .carousel {
         width: 740px;
-        
+
       }
       .container {
         width: 750px;
@@ -141,16 +151,16 @@ width: 50%;
       .glyphicon.glyphicon-chevron-right {
         font-size: 35px;
       }
-      h1{
+      h1 {
         font-size: 45px;
       }
-      .gatsu{
-        font-size:43px;
+      .gatsu {
+        font-size: 43px;
       }
     }
 
     @media(min-width: 1200px) {
-      .carousel{
+      .carousel {
         width: 820px;
       }
       .container {
@@ -165,11 +175,11 @@ width: 50%;
       .glyphicon.glyphicon-chevron-right {
         font-size: 55px;
       }
-      h1{
+      h1 {
         font-size: 50px;
       }
-      .gatsu{
-        font-size:50px;
+      .gatsu {
+        font-size: 50px;
       }
     }
   </style>
@@ -182,7 +192,10 @@ width: 50%;
     });
   </script>
   <div id="main">
-    <div id="osaka"><div class="gatsu" onclick="openNav()"><font color="ffff"><span class="glyphicon glyphicon-th-list"></span></font></div>
+    <div id="osaka">
+      <div class="gatsu" onclick="openNav()">
+        <font color="ffff"><span class="glyphicon glyphicon-th-list"></span></font>
+      </div>
 
       <div id="mySidenav" class="sidenav">
         <a href="home.html" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home home"></span></a>
@@ -192,6 +205,9 @@ width: 50%;
         <a href="cafe.html" data-toggle="tooltip" title="Cafe">Cafe</a>
         <a href="credits.html" data-toggle="tooltip" title="Credits">Credits</a>
       </div><br>
+      
+      <div class="heading"><h1>Osaka (大阪）</h1></div>
+      
       <div class="container">
         <div id="top-places" class="carousel slide" data-ride="carousel">
           <!--Indicators -->
@@ -234,8 +250,9 @@ width: 50%;
             </div>
             <div class="item">
               <img src="img/osaka/osaka7.jpg" class="img-thumbnail" style="width:100%">
-            <div class="carousel-caption">Ichiran Ramen: A type of ramen which is mainly sold in Japan, and extremely expensive overseas. It can be found in other cities like Tokyo and Kyoto.
-</div></div>
+              <div class="carousel-caption">Ichiran Ramen: A type of ramen which is mainly sold in Japan, and extremely expensive overseas. It can be found in other cities like Tokyo and Kyoto.
+              </div>
+            </div>
             <div class="item">
               <img src="img/osaka/osaka8.jpg" class="img-thumbnail" style="width:100%">
             </div>
@@ -258,32 +275,38 @@ width: 50%;
             <span class="sr-only">Next</span>
             </a>
       </div>
-      <div class="box"><div class="col-sm-offset-2 col-md-6 col-sm-8 col-xs-12 col-md-offset-3"><h1> If you are on a budget, I would highly recommend you to travel to Osaka(<strong>大阪</strong>). Osaka has lots of tasty street food, and at some parts of Osaka, after 6-7pm, restaurants put their food up for sale. Since all their ingredients are fresh and prepared in the morning, food that is left overnight is usually thrown out.
-Osaka is a great place if you want to learn about Japan’s culture and see ancient historical sites.</h1></div></div>
-        <div class="middle"><img src="img/osaka/osaka11.jpg" class="image" style="width:100%">
-        <div class="text"><font size="5px"color="blue">Osaka is a great place if you want to learn about Japan’s culture and see ancient historical sites.</font>
+      <div class="box">
+        <div class="col-sm-offset-2 col-md-6 col-sm-8 col-xs-12 col-md-offset-3">
+          <h1> If you are on a budget, I would highly recommend you to travel to Osaka(<strong>大阪</strong>). Osaka has lots of tasty street food, and at some parts of Osaka, after 6-7pm, restaurants put their food up for sale. Since all their ingredients are
+            fresh and prepared in the morning, food that is left overnight is usually thrown out. Osaka is a great place if you want to learn about Japan’s culture and see ancient historical sites.</h1>
+        </div>
+      </div>
+      <div class="middle"><img src="img/osaka/osaka11.jpg" class="image" style="width:100%">
+        <div class="text">
+          <font size="5px" color="blue">Osaka is a great place if you want to learn about Japan’s culture and see ancient historical sites.</font>
         </div>
       </div>
       <div class="middle"><img src="img/osaka/osaka12.jpg" class="image" style="width:100%">
-        <div class="text"><font size="5px" color="blue">Osakajo (Osaka Castle): Constructed in 1583, and over 3,300,000 sq m.</font>
+        <div class="text">
+          <font size="5px" color="blue">Osakajo (Osaka Castle): Constructed in 1583, and over 3,300,000 sq m.</font>
         </div>
       </div>
       <div class="container-fluid">
-      <!--Google Map-->
-      <div id="map" style="width:100%; height:550px"></div><br>
-      <script>
-        function myMap() {
-          var mapOptions = {
-            center: new google.maps.LatLng(34.6867877, 135.4733433),
-            zoom: 11,
-            mapTypeId: google.maps.MapTypeId.HYBRID
+        <!--Google Map-->
+        <div id="map" style="width:100%; height:550px"></div><br>
+        <script>
+          function myMap() {
+            var mapOptions = {
+              center: new google.maps.LatLng(34.6867877, 135.4733433),
+              zoom: 11,
+              mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
           }
-          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAxe9QTeNBaY6WrSpyIcV4JLLguULT7nE&callback=myMap"></script>
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAxe9QTeNBaY6WrSpyIcV4JLLguULT7nE&callback=myMap"></script>
+      </div>
     </div>
-  </div>
 </body>
 
 </html>
